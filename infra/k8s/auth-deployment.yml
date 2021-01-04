@@ -3,13 +3,13 @@ kind: Deployment
 metadata:
   name: auth-deployment
 spec:
-  replica: 1
+  replicas: 1
   selector:
     matchLabels:
       app: auth
   template:
     metadata:
-      lables:
+      labels:
         app: auth
     spec:
       containers:
