@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: sithu83/auth
+          image: us.gcr.io/studied-yen-300713/auth
 ---
 apiVersion: v1
 kind: Service

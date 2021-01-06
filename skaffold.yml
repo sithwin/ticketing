@@ -5,13 +5,15 @@ deploy:
     manifests:
       - ./infra/k8s/*
 build:
-  local:
-    push: false
+  # local:
+  #   push: false
+  googleCloudBuild:
+    projectId: studied-yen-300713
   artifacts:
-    - image: sithu83/auth
+    - image: us.gcr.io/studied-yen-300713/auth
       context: auth
       docker:
-        dockerfile: dockerfile
+        dockerfile: Dockerfile
       sync:
         manual:
           - src: "src/**/*.ts"
