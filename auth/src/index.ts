@@ -26,6 +26,7 @@ app.use(errorHandler);
 
 const start = async () => {
   try {
+    /// await mongoose.connect("mongodb://localhost:27017/auth", {
     await mongoose.connect("mongodb://auth-mongo-service:27017/auth", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
