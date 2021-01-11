@@ -1,6 +1,6 @@
-import { CustomerError } from "./custom-error";
+import { CustomError } from "./custom-error";
 
-export class DatabaseConnectionError extends CustomerError {
+export class DatabaseConnectionError extends CustomError {
   statusCode = 500;
   reason = "Failed to connect to datbase";
 
