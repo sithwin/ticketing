@@ -41,7 +41,7 @@ router.post(
         id: user.id,
         email: user.email,
       },
-      "ticketing"
+      process.env.JWT_KEY! // already defined and Checked JWT_KEY in index.ts
     );
 
     // Store it on session object
