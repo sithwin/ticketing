@@ -58,3 +58,11 @@ kubectl create secret generic jwt-secret --from-literal=JWT_KEY=ticketing
 
 kubectl get secret
 ```
+
+## Deleting PODs
+
+```
+Kubectl get get pods
+
+kubectl delete pod container name
+```

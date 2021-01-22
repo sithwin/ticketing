@@ -15,3 +15,7 @@ npm install react react-dom next
 ```
 docker build -t sithu83/client .
 ```
+
+## Auto refresh Next Server
+
+add next.config.js
