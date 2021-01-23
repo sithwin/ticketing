@@ -34,7 +34,9 @@ gcloud init
 
 ### Run gcloud container
 
+```
 gcloud container clusters get-credentials <cluster name>
+```
 
 you will see the new kubernetes context in kubernetes tray's dropdown
 
