@@ -10,13 +10,42 @@ Alternatively, open a PowerShell terminal and run the following PowerShell comma
 & $env:Temp\GoogleCloudSDKInstaller.exe
 ```
 
-## Run gcloud container
+## Login
+
+```
+gcloud auth login
+```
+
+## Init GCloud
+
+```
+gcloud init
+```
+
+- Select Create a new configuration for the first time. Otherwise, Reinitilize this configuration
+- Select your account
+- Select the project Id
+  to know the project name go to Google Cloud Platform -> Select project from Top manu and check the ID of your poject
+- Input y
+- Select region
+  to know the region go to Kubernetes Engine from GCP and check the location name
+
+## Select kubernetes context in docker
+
+### Run gcloud container
 
 gcloud container clusters get-credentials <cluster name>
+
+you will see the new kubernetes context in kubernetes tray's dropdown
 
 ```
 gcloud container clusters get-credentials ticketing-dev
 ```
+
+## Enable google cloud build
+
+- go to GCP -> Tools -> Cloud Build
+- Click Enable
 
 ## Steps to create ingress-nginx
 
@@ -27,10 +56,12 @@ gcloud container clusters get-credentials ticketing-dev
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.43.0/deploy/static/provider/cloud/deploy.yaml
 
-https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/provider/cloud-generic.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/provider/cloud-generic.yaml
 ```
 
-4. Go to Loadbalacer in GCP and get ip address of LB
+- go to networking -> Load Balancing -> Load Balancer to check
+
+4. Go to Loadbalancer in GCP and get ip address of LB
 5. change the host file
 6. Run
 
