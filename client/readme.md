@@ -19,3 +19,9 @@ docker build -t sithu83/client .
 ## Auto refresh Next Server
 
 add next.config.js
+
+## Http Calling
+
+```
+npm install axios
+```
