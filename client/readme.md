@@ -38,3 +38,28 @@ run
 ```
 kubectl delete -A ValidatingWebhookConfiguration ingress-nginx-admission
 ```
+
+## To call Auth Service from Nest Server
+
+## Ingress Cluster URL
+
+Below Domain name is to reach out to ingress-nginx
+http://ServiceName.NameSpace.svc.cluster.local
+
+To find it get the name of the ingress-nginx
+
+```
+kubectl get namespace
+```
+
+To get the ingress-nginx name and run
+
+```
+kubectl get service -n ingress-nginx
+```
+
+Your url should be
+
+```
+http://ingress-nginx.ingress-nginx.svc.cluster.local/[yourEndPoint]
+```

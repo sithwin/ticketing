@@ -49,6 +49,10 @@ gcloud container clusters get-credentials ticketing-dev
 - go to GCP -> Tools -> Cloud Build
 - Click Enable
 
+## Run mandatory
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/mandatory.yaml
+
 ## Steps to create ingress-nginx
 
 1. Change in skaffold file
