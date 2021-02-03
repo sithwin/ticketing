@@ -15,3 +15,9 @@ npm install --save-dev @types/jest @types/supertest jest ts-jest supertest mongo
 ```
 npm test -- --coverage
 ```
+
+## To update the common module
+
+```
+npm update @vmticketing/common
+```

@@ -103,3 +103,23 @@ Kubectl get get pods
 
 kubectl delete pod container name
 ```
+
+## Checking container
+
+- first get pods name
+
+```
+kubectl get pods
+```
+
+- go inside the pod
+
+```
+kubectl exec -it [podName] sh
+```
+
+- cd into package.json file
+
+```
+cat package.json
+```
