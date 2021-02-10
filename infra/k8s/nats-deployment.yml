@@ -7,6 +7,10 @@ spec:
   selector:
     matchLabels:
       app: nats
+  template:
+    metadata:
+      labels:
+        app: nats
     spec:
       containers:
         - name: nats
