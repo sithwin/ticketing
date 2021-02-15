@@ -15,5 +15,5 @@ tsc --init
 - get name of the nats deployment
 
 ```
-kubectl port-forward nats-deployment-5f547cf8c8-tbr2g 4222:4222
+kubectl port-forward nats-deployment-67557c9697-kws9z 4222:4222
 ```
